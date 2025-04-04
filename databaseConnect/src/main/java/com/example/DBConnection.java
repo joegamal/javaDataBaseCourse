@@ -1,4 +1,5 @@
 package com.example;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLClientInfoException;
@@ -20,7 +21,7 @@ public class DBConnection {
 
             con.close();
         }catch(SQLClientInfoException exp){
-
+            System.out.println(exp.getMessage());
         }
     }
 
